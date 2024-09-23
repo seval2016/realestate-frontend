@@ -1,0 +1,36 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.team-member-card {
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	img {
+		height: auto;
+        @include m.transition(transform 0.5s)
+	}
+
+	.card-title {
+		background-color: v.$color2;
+		margin: 0;
+		text-align: center;
+		padding: 5px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include m.transform(translateY(100%));
+        @include m.transition(transform 0.5s)
+	}
+
+    &:hover{
+        .card-title{
+            @include m.transform(translateY(0));
+        }
+
+        img{
+            @include m.transition(transform 0.8s);
+		    @include m.transition(box-shadow 0.8s);
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

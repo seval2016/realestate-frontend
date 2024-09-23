@@ -1,0 +1,15 @@
+@use "../../styles/variables" as v;
+
+.radio-group{
+  margin: 10px;
+  width: 130%;
+
+  .radio-label{
+    margin-right: 10px;
+    color: v.$color8;
+  }
+  .radio-input{
+    color: v.$color2-op-30;
+    margin-right: 3px;
+  }
+}

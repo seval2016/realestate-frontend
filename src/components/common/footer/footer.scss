@@ -1,0 +1,16 @@
+@use "../../../styles/variables" as v;
+
+footer{
+    background-color: v.$color5;
+    color: v.$color4;
+    padding:70px 0;
+
+    .mMenu{
+        display: flex;
+        flex-direction: column;
+        color: v.$color6;
+
+    }
+
+
+}

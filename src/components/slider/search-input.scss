@@ -1,0 +1,30 @@
+@use "../../styles/variables" as v;
+
+.p-inputgroup{
+    
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: v.$color7;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 80%;
+    max-width: 80%;
+
+    .input-text{
+        padding: 8px;
+        border-color: v.$color7;
+        border-radius: 10px;
+        margin-right: 10px;
+        background-color: v.$color2-op-30;
+    
+    }
+    .p-button{
+      
+        font-size: 1.2rem;
+        border-color: v.$color1;
+        border-radius: 10px;
+        color: v.$color7;
+        background-color: v.$color1;
+    }
+}

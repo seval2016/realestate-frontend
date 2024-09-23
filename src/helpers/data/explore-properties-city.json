@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "İstanbul",
+        "value": "820 properties"
+    },
+    {
+        "id": 2,
+        "title": "İzmir",
+        "value": "320 properties"
+    },
+    {
+        "id": 3,
+        "title": "Antalya",
+        "value": "80 properties"
+    },
+    {
+        "id": 4,
+        "title": "Bursa",
+        "value": "78 properties"
+    },
+    {
+        "id": 5,
+        "title": "Ankara",
+        "value": "410 properties"
+    }
+]
