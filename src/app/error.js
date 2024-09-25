@@ -24,15 +24,19 @@ const Page = ({ error, reset }) => {
 						/>
 					</Col>
 					<Col md={6} className="text-center text-md-start">
-						<h2>Oops!It looks like you're lost.</h2>
+						<h2>Something went wrong</h2>
 
 						<p>
-							The page you're looking for isn't available.Try to search again or use the go to:
+						    An unexpected error has occurred. We apologize for
+						 	the inconvenience. Our technical team has been
+							notified and is working to resolve the issue. Please
+							try again later. If the problem persists, feel free
+							to contact our support team for assistance. Thank
+							you for your understanding.
 						</p>
 						<button
 							className="btn btn-outline-secondary"
 							onClick={
-								// Attempt to recover by trying to re-render the segment
 								() => reset()
 							}
 						>
