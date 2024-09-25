@@ -1,0 +1,12 @@
+
+
+.custom-input {
+    background-color: #f0f0f0; /* Gri arka plan */
+    border: none; /* Çerçeveyi kaldır */
+    outline: none; /* Tıklanınca mavi çerçeve olmasın */
+    border-bottom-style: outset;
+    padding: 10px; /* İç boşluk */
+    width: 100%; /* Genişliği tam olsun */
+    box-sizing: border-box; /* Padding ve sınırların genişlik ile uyumlu olmasını sağlar */
+    border-radius: 4px; /* Köşeleri yuvarlatır */
+}

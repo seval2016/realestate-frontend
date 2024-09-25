@@ -1,0 +1,60 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+.main-slider {
+
+  
+ 
+  
+  img {
+		width: 100%;
+		height: calc(120vh - 130px);
+		object-fit: cover;
+		object-position: left top;
+    border-radius: 20px;
+    
+	}
+} 
+    .carousel-caption {
+     
+      left: 0;
+      top: 50%;
+      transform: translateY(-40%);
+      text-align: left;
+      width: 60%;
+      padding-left: 10rem;
+      
+  
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 40px;
+        
+      }
+  
+    
+  
+     
+  
+      @media (max-width: 1200px) { /* Mobil cihazlar için */
+        width: 70%; /* Genişliği daha da artır */
+        padding: 10px; /* İçerik için padding'i azalt */
+        margin-left: 30px;
+        h3 {
+          font-size: 1.4rem; /* Başlık boyutunu küçült */
+        }
+      }
+
+      
+      @media (max-width: 600px) { /* Mobil cihazlar için */
+        width: 100%; /* Genişliği daha da artır */
+        padding: 5px; /* İçerik için padding'i azalt */
+        margin-left: 10px;
+        h3 {
+          font-size: 1.4rem; /* Başlık boyutunu küçült */
+        }
+      }
+
+    
+  }
+  
+  

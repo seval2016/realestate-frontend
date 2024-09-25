@@ -1,0 +1,7 @@
+@use "../../styles/variables" as v;
+
+
+.searchButton{
+    background-color: v.$color1;
+    border-radius: 0.6rem;
+}

@@ -1,0 +1,12 @@
+@use "../../styles/variables" as v;
+
+.contact-div {
+    .btn{
+        padding: 10px 30px;
+        border-radius: 20px;
+        .phone{
+            background-color: v.$color4;
+        }
+    
+    }
+}

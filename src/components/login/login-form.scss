@@ -1,0 +1,36 @@
+@use "../../styles/mixins" as m;
+@use "../../styles/variables" as v;
+
+
+.login-form{
+
+    position: relative;
+
+    .forgot-btn{
+        position: absolute;
+        display: block;
+        right: 0;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+
+    }
+    .login-btn{
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        transform: translateX(50%);
+        width: 50%;
+        background-color: v.$color1;
+    }
+
+    .form-control{
+        border-radius: 0%;
+        border-bottom-color: v.$color5;
+        background-color: v.$color2-op-10;
+        
+    }
+
+    .input-group-text{
+        border-bottom-color: v.$color5;
+    }
+    
+}

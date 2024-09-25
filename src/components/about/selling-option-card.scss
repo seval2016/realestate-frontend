@@ -1,0 +1,99 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.sellingContainer {
+  margin: 2rem 0;
+  background-color: v.$color2;
+  border-radius: 20px;
+
+  
+
+
+.textCol {
+  .icon-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    .icon {
+     
+      @include m.transform(translateY(-20%));
+      margin: 20px;
+      width: 60px; 
+      height: 60px; 
+      background-color: v.$color7;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    h5 {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    h6 {
+      font-size: 1rem;
+      color: #6c757d;
+    }
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+}
+
+/*
+.sellingContainer{
+    background-color: v.$color2;
+    border-radius: 20px;
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
+
+    .textCol{
+        width: 50%;
+        
+    }
+    
+    .selling-option-image{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 50%; 
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        object-fit: cover;
+        
+
+    }
+    .icon-option{
+        display: flex;
+        flex-direction: row;
+
+        .icon{
+            @include m.transform(translateY(-20%));
+            margin: 20px;
+            width: 60px; 
+            height: 60px; 
+            background-color: v.$color7;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+     
+    }
+}
+
+*/

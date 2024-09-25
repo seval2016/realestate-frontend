@@ -1,0 +1,38 @@
+@use "../../../styles/variables" as v;
+@use "../../../styles/mixins" as m;
+
+
+.p-datatable-tbody > tr {
+    border-bottom: none;
+    
+} 
+
+
+.p-datatable-tbody > tr > td {
+    padding: 30px; 
+    background-color: v.$color2-op-10;
+}
+.p-datatable-thead > tr > th {
+    padding: 0px 30px; 
+
+}
+
+.p-datatable table {
+    border-collapse: separate;
+    border-spacing: 0 10px;  
+}
+
+  
+.p-datatable-tbody > tr > td:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+.p-datatable-tbody > tr > td:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.p-datatable-tbody img {
+    border-radius: 15px; 
+}
