@@ -20,6 +20,7 @@
     "react-dom": "^18",
     "sass": "^1.77.8",
     "sweetalert2": "^11.12.2",
+    "technexusacademy-nextjs": "file:",
     "yup": "^1.4.0"
   },
   "devDependencies": {
