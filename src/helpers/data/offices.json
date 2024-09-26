@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "icon": "eiffel.jpg",
+        "city": "PARIS",
+        "address": "13012nd Ave,Seattle,WA 98101"
+    },
+    {
+        "id": 2,
+        "icon": "london.jpg",
+        "city": "LONDON",
+        "address": "13012nd Ave,Seattle,WA 98101"
+    },
+    {
+        "id": 3,
+        "icon": "galata.jpg",
+        "city": "ISTANBUL",
+        "address": "13012nd Ave,Seattle,WA 98101"
+    }
+]

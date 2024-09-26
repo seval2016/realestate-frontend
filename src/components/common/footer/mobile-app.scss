@@ -1,0 +1,11 @@
+@use "../../styles/variables" as v;
+
+.mobile-app {
+    padding: 50px 0;
+    background-color: v.$color2;
+
+    .btn:hover{
+        color: v.$color3;
+    }
+
+}

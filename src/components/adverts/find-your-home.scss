@@ -1,0 +1,26 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.findHomeContainer{
+    margin: 2rem;
+    background-color: v.$color2-op-30;
+    padding: 2rem;
+    border-radius: 15px;
+
+    .priceRange{
+        margin-bottom: 2rem;
+    
+        .minMaxRange{
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            text-align: center;
+            
+            
+        }
+    }
+
+    .findHome,.priceRange,.propertyStatus,.propertyType,.location{
+        margin-bottom: 2rem;
+    }
+}

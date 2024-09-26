@@ -1,0 +1,23 @@
+/* COMMON */
+$color1:rgb(194, 214, 104);
+$color2: rgb(231, 239, 198);
+$color3: rgb(59, 59, 59);
+$color4: rgb(110, 110, 110);
+$color5: rgb(56, 56, 56);  //footer
+$color6: rgb(241, 245, 220);  //sellinb options,dream house
+$color7: rgb(250, 250, 250);
+$color8: rgb(242, 242, 242);
+$color1-op-50: rgb(241, 90, 92, 0.5);
+$color2-op-50: rgb(29, 64, 86, 0.5);
+$color1-op-10: rgb(241, 90, 92, 0.1);
+$color2-op-10: rgb(29, 64, 86, 0.1);
+$color1-op-30: rgb(241, 90, 92, 0.3);
+$color2-op-30: rgba(29, 64, 86, 0.164);
+
+$vendors: ("", "-webkit-", "-moz-", "-ms-", "-o-");
+
+
+/* BOOTSTRAP */
+//$font-family-sans-serif: var(--font-montserrat);
+$primary: $color2;
+$secondary: $color3;

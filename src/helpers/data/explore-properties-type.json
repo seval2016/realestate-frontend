@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "icon": "home.png",
+        "title": "Houses",
+        "value": "33 properties"
+    },
+    {
+        "id": 2,
+        "icon": "apartment.png",
+        "title": "Apartments",
+        "value": "21 properties"
+    },
+    {
+        "id": 3,
+        "icon": "office.png",
+        "title": "Offices",
+        "value": "85 properties"
+    },
+    {
+        "id": 4,
+        "icon": "villa.png",
+        "title": "Villas",
+        "value": "15 properties"
+    },
+    {
+        "id": 5,
+        "icon": "bungalow.png",
+        "title": "Bungalows",
+        "value": "21 properties"
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "image": "property-1.jpg",
+        "title": "Luxury villa in Central Park",
+        "city": "Pendik,İstanbul",
+        "value": "$1500"
+    },
+    {
+        "id": 2,
+        "image": "property-1.jpg",
+       "title": "Luxury villa in Central Park",
+        "city": "Pendik,İstanbul",
+        "value": "$1500"
+    },
+    {
+        "id": 3,
+        "image": "property-1.jpg",
+       "title": "Luxury villa in Central Park",
+        "city": "Pendik,İstanbul",
+        "value": "$1500"
+    },
+    {
+        "id": 4,
+        "image": "property-1.jpg",
+       "title": "Luxury villa in Central Park",
+        "city": "Pendik,İstanbul",
+        "value": "$1500"
+    },
+    {
+        "id": 5,
+        "image": "property-1.jpg",
+        "title": "Luxury villa in Central Park",
+        "city": "Pendik,İstanbul",
+        "value": "$1500"
+    },
+    {
+        "id": 6,
+        "image": "property-1.jpg",
+        "title": "Luxury villa in Central Park",
+        "city": "Pendik,İstanbul",
+        "value": "$1500"
+    }
+]

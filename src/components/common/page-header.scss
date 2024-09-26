@@ -1,0 +1,12 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.page-header{
+  h1{
+    @include m.transform(translateY(-250%));
+    color: v.$color1;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}

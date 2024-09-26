@@ -1,0 +1,20 @@
+{
+    "root" : [
+        { "title": "My Profile", "link": "/dashboard/profile"},
+        { "title": "Change Password", "link": "/dashboard/change-password"},
+        { "title": "My Properties", "link": "/dashboard/my-adverts"},
+        { "title": "Add Property", "link": "/dashboard/add-property"}, 
+        { "title": "Tour Requests", "link": "/dashboard/tour-request"}
+    ],
+    "admin" : [
+        { "title": "Dashboard", "link": "/dashboard"},
+        { "title": "Adverts", "link": "/dashboard/advert"},
+        { "title": "Categories", "link": "/"},
+        { "title": "Advert Types", "link": "/"},
+        { "title": "Users", "link": "/"},
+        { "title": "Tour Requests", "link": "/"},
+        { "title": "Reports", "link": "/"},
+        { "title": "Contact Messages", "link": "/"},
+        { "title": "Web Site", "link": "/"}
+    ]
+}

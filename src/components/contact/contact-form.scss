@@ -1,0 +1,22 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.contact-form{
+    width: 65%;
+    margin-left: 10rem;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-80%);
+    z-index: 1;
+    background-color: v.$color8;
+
+  
+
+    .form-control {
+        margin-bottom: 2rem;
+        background-color: v.$color2-op-30;
+        border-bottom: 1px solid v.$color2-op-30;
+        @include m.border-radius(5);
+}
+}

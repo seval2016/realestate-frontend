@@ -1,0 +1,59 @@
+@use "../../../styles/variables" as v;
+
+.plus-image-container-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.plus-image-container {
+    position: relative;
+    width: 100%;  
+    height: 200px; 
+    background-color: v.$color2-op-10;
+}
+
+
+.plus-image-container .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; 
+    object-fit: cover; 
+
+}
+
+
+.plus-image-container .plus-icon-container {
+    position: absolute;
+    top: -20px; 
+    right: 50%;
+    background-color: white; 
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    color: v.$color2; 
+}
+
+.plus-image-container .upload-container{
+    position: absolute;
+    bottom: -30px; 
+    left: 42%;
+    padding: 5px;
+    
+}
+
+.plus-image-container .message-container{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    padding: 5px;
+    font-size: 1.6rem;
+    
+}
+
+.plus-image-container .plus-icon {
+    color: v.$color2; 
+    font-size: 30px; 
+    
+}
