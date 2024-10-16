@@ -1,9 +1,12 @@
 "use client"
 import React from 'react'
 import { Form } from 'react-bootstrap'
-import { cities } from '../../helpers/data/cities.json'
+import citiesData from '../../helpers/data/cities.json'
 
 const Location = () => {
+
+  const cities = citiesData.cities;
+  
   return (
     <div>
       <h6>Location</h6>

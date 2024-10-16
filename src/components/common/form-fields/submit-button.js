@@ -1,17 +1,20 @@
 "use client";
 import React from "react";
-import { Button } from "react-bootstrap";
-
+import { Button, Spinner } from "react-bootstrap";
+import { useFormStatus } from "react-dom";
 
 const SubmitButton = ({
 	title,
 	icon,
+	spinnerVariant = "secondary",
 	...rest
 }) => {
 	
+	const { pending } = useFormStatus();
 
 	return (
-		<Button type="submit"  size="lg" {...rest}>
+		<Button type="submit" disabled={pending} size="lg" {...rest}>
+			{pending && <Spinner variant={spinnerVariant} size="sm" />}
 			{icon && <i className={`pi pi-${icon}`}></i>}  
 			{title}
 		</Button>

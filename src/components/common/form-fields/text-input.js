@@ -2,11 +2,12 @@ import React from "react";
 import { FormControl, FormGroup, FormLabel } from "react-bootstrap";
 
 
-const TextInput = ({ label, className, ...rest }) => {
+const TextInput = ({ error, label, className,type = "text",controlId, ...rest }) => {
 	return (
-		<FormGroup className={className} controlId="formBasicEmail">
+		<FormGroup className={className} controlId={controlId}>
 			<FormLabel>{label}</FormLabel>
-			<FormControl className="custom-input" size="lg" {...rest} />
+			<FormControl type={type} className="custom-input" isInvalid={!!error} size="lg" {...rest} />
+			<FormControl.Feedback type="invalid">{error}</FormControl.Feedback>
 		</FormGroup>
 	);
 };

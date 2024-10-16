@@ -54,7 +54,7 @@ export const config = {
 			},
 		},
 	},
-	apiURL: "https://mycampusmates.com/app",
+	apiURL: "http://localhost:8084/swagger-ui.html",
 	
 	genders: [
 		{ label: "Female", value: "FEMALE" },
@@ -159,9 +159,3 @@ export const config = {
 		{ urlRegex: /\/dashboard\/grades-meets$/, roles: ["STUDENT"] },
 	],
 };
-//config yapmak zorunlu olmasa da faydali
-
-//generate free phone number for chicago
-
-//   urlRegex: /\/dashboard$/  regex ler // icine yazilir burada ilk / ; regex in. \ bunun gorevi de;senden sonra gelecek ozel karakter ama string olarak kabul et demek.cunku /dashboard daki / ; yol icin
-//  \d ; rakam  ,  \d+ ; birden fazla rakam

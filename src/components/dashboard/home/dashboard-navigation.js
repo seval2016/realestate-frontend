@@ -2,9 +2,11 @@ import React from "react";
 import userMenuData from "@/helpers/data/user-menu.json";
 import { Col, Container, Row } from "react-bootstrap";
 import Link from "next/link";
+import { auth } from "@/auth";
 
 const DashboardNavigation = async () => {
-	    
+	const session = await auth();
+	const { role } = session.user;            
 	const userMenu = userMenuData[role.toLowerCase()];
 
 	return (

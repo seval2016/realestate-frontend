@@ -16,4 +16,3 @@ const UserMenuGuest = () => {
 
 export default UserMenuGuest;
 
-//misafir kullanici,giris yapmamis

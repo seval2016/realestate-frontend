@@ -1,0 +1,63 @@
+"use client";
+import React, { useState } from "react";
+import { Button, Nav, Offcanvas } from "react-bootstrap";
+import userMenuData from "@/helpers/data/user-menu.json"; 
+import { useRouter } from "next/navigation";
+import LogoutButton from "./logout-button";
+
+
+const UserMenuAuth = ({ session }) => {
+	const [show, setShow] = useState(false);  //handle show u state e baglayacagiz true olursa offCanvas gozukecek
+	 const router = useRouter();
+
+	const { name, role } = session.user;
+
+	const handleShow = () => setShow(true);
+	const handleClose = () => setShow(false);
+
+	const getUser = () => (
+		<>
+			<i className="pi pi-user"></i> {name}   
+		</>
+	); 
+
+	const handleNavigate = (link) => {      
+		router.push(link);     
+	};  
+
+	const userMenu = userMenuData[role.toLowerCase()];  
+
+	return (
+		<>
+			<Button variant="primary" onClick={handleShow}>
+				{getUser()}
+			</Button>
+
+			<Offcanvas show={show} onHide={handleClose}>
+				<Offcanvas.Header closeButton>
+					<Offcanvas.Title>{getUser()}</Offcanvas.Title>
+				</Offcanvas.Header>
+				<Offcanvas.Body>
+					<Nav className="flex-column"> 
+						{userMenu.map((item) => (
+							<Button
+								key={item.link}
+								variant="link"
+								className="nav-link text-start"
+								onClick={() => handleNavigate(item.link)}
+							>
+								{item.title}
+								</Button>
+						))}
+						<LogoutButton/>
+					</Nav>
+				</Offcanvas.Body>
+			</Offcanvas>
+		</>
+	);
+};
+
+export default UserMenuAuth;
+
+
+

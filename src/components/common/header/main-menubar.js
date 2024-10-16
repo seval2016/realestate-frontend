@@ -9,7 +9,7 @@ import UserMenuGuest from './user-menu-guest'
 
 const MainMenubar = () => {
   return (
-    <div className>
+    <div>
       <Navbar
 			expand="lg"
 			className="bg-body-tertiary position-fixed w-100 top-0"
@@ -22,7 +22,7 @@ const MainMenubar = () => {
 				<Navbar.Toggle aria-controls="main-menu" />
 				<Navbar.Offcanvas
 					id="main-menu"
-					aria-labelledby="main-menu-title"     //Offcanvas.Title id ile ayni olmalı
+					aria-labelledby="main-menu-title"    
 					placement="end"
 				>
 					<Offcanvas.Header closeButton>
@@ -34,6 +34,7 @@ const MainMenubar = () => {
 								className="img-fluid"
 								  //alt={config.project.name}
 								alt="logo"
+								
 							/>
 						</Offcanvas.Title>
 					</Offcanvas.Header>

@@ -1,6 +1,6 @@
 import PageHeader from '@/components/common/page-header'
 import Spacer from '@/components/common/spacer'
-import ForgotPasswordForm from '@/components/dashboard/forgot-password/forgot-password-form'
+import ForgotPasswordForm from '@/components/forgot-password/forgot-password-form'
 
 import React from 'react'
 
