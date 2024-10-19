@@ -6,14 +6,14 @@ const AdvertList = () => {
 
     useEffect(() => {
         const fetchAdverts = async () => {
-            const response = await axios.get(`${API_URL}/adverts/auth`);  // Fetch user's adverts
+            const response = await axios.get(`${ADVERT_GET_ALL_BY_PAGE_API}/adverts/auth`); 
             setAdverts(response.data);
         };
         fetchAdverts();
     }, []);
 
     const handleDelete = async (advertId) => {
-        await axios.delete(`${API_URL}/adverts/${advertId}/auth`);
+        await axios.delete(`${ADVERT_DELETE_API}/adverts/${advertId}/auth`);
         setAdverts(adverts.filter(advert => advert.id !== advertId));
     };
 
