@@ -1,4 +1,4 @@
-// components/ProfileForm.js
+
 
 import { useState } from 'react';
 
@@ -22,7 +22,7 @@ const ProfileForm = () => {
   const validateForm = () => {
     let formErrors = {};
     
-    // Validate firstName and lastName (simple length check)
+
     if (!formData.firstName.trim()) {
       formErrors.firstName = 'First name is required';
     }
@@ -30,13 +30,12 @@ const ProfileForm = () => {
       formErrors.lastName = 'Last name is required';
     }
 
-    // Validate phoneNumber (must be a number with 10 digits)
     const phoneRegex = /^[0-9]{10}$/;
     if (!phoneRegex.test(formData.phoneNumber)) {
       formErrors.phoneNumber = 'Phone number must be 10 digits';
     }
 
-    // Validate email (using regex)
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       formErrors.email = 'Invalid email address';
@@ -50,7 +49,7 @@ const ProfileForm = () => {
     e.preventDefault();
 
     if (validateForm()) {
-      // Submit form logic (e.g., API call to update profile)
+
       console.log('Profile updated:', formData);
     }
   };

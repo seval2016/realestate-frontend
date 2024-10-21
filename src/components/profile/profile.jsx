@@ -1,4 +1,4 @@
-// pages/profile.js
+
 
 import ProfileForm from '../components/ProfileForm';
 
