@@ -54,7 +54,7 @@ export const config = {
 			},
 		},
 	},
-	apiURL: "http://localhost:8084/swagger-ui.html",
+	apiURL: "http://localhost:8084/",
 	
 	genders: [
 		{ label: "Female", value: "FEMALE" },
