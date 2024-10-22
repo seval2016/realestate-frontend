@@ -17,7 +17,7 @@ const Page = () => {
       <PageHeader title="CONTACT US" />
       <Contact />
       <Spacer />
-      
+ 
     </>
   )
 }

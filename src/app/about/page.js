@@ -17,6 +17,7 @@ const Page = () => {
     <>
       <PageHeader title="ABOUT" />
       <Spacer />
+    
       <MissionToChange />
       <Spacer />
       <FindSellingOption />
@@ -25,6 +26,8 @@ const Page = () => {
       <Spacer />
       <ContactExpert />
       <Spacer />
+
+
     </>
   );
 };

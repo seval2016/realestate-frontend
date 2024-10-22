@@ -10,6 +10,7 @@ export const metadata = {
 
 }
 
+
 const Page = () => {
   return (
     <>

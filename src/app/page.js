@@ -9,6 +9,8 @@ import FindSellingOption from "@/components/about/find-selling-option";
 
 import Slider from "@/components/home/slider";
 import React from "react";
+import { LocaleRouteNormalizer } from "next/dist/server/future/normalizers/locale-route-normalizer";
+
 
 const Page = () => {
   return (
@@ -16,18 +18,29 @@ const Page = () => {
       <Spacer />
       <Slider />
       <Spacer />
+
       <ExplorePropertiesType />
+
       <Spacer />
       <ExplorePropertiesCity />
+
       <Spacer />
+
       <DreamHouse />
+
       <Spacer />
+
       <DiscoverProperties />
       <Spacer />
       <FindSellingOption />
+
+
       <Spacer />
       <ContactExpert />
       <Spacer />
+   
+
+
     </div>
   );
 };
