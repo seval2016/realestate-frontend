@@ -75,9 +75,7 @@ export const config = {
 			roles: [
 				"ADMIN",
 				"MANAGER",
-				"ASSISTANTMANAGER",
-				"TEACHER",
-				"STUDENT",
+				"CUSTOMER",
 			],
 		},
 		{ urlRegex: /\/dashboard\/admin$/, roles: ["ADMIN"] },  //buraya sadece admin ulasabiliyor
@@ -86,76 +84,28 @@ export const config = {
 		{ urlRegex: /\/dashboard\/manager\/new$/, roles: ["ADMIN"] },
 		{ urlRegex: /\/dashboard\/manager\/\d+$/, roles: ["ADMIN"] },
 		{
-			urlRegex: /\/dashboard\/assistant-manager$/,
+			urlRegex: /\/dashboard\/manager$/,
 			roles: ["ADMIN", "MANAGER"],
 		},
 		{
-			urlRegex: /\/dashboard\/assistant-manager\/new$/,
+			urlRegex: /\/dashboard\/manager\/new$/,
 			roles: ["ADMIN", "MANAGER"],
 		},
 		{
-			urlRegex: /\/dashboard\/assistant-manager\/\d+$/,
+			urlRegex: /\/dashboard\/manager\/\d+$/,
 			roles: ["ADMIN", "MANAGER"],
 		},
 		{
-			urlRegex: /\/dashboard\/teacher$/,
-			roles: ["ADMIN", "ASSISTANTMANAGER"],
+			urlRegex: /\/dashboard\/customer$/,
+			roles: ["ADMIN", "MANAGER"],
 		},
 		{
-			urlRegex: /\/dashboard\/teacher\/new$/,
-			roles: ["ADMIN", "ASSISTANTMANAGER"],
+			urlRegex: /\/dashboard\/customer\/new$/,
+			roles: ["ADMIN", "MANAGER"],
 		},
 		{
-			urlRegex: /\/dashboard\/teacher\/\d+$/,
-			roles: ["ADMIN", "ASSISTANTMANAGER"],
+			urlRegex: /\/dashboard\/customer\/\d+$/,
+			roles: ["ADMIN", "MANAGER"],
 		},
-		{
-			urlRegex: /\/dashboard\/lesson$/,
-			roles: ["ADMIN", "ASSISTANTMANAGER"],
-		},
-		{
-			urlRegex: /\/dashboard\/lesson\/new$/,
-			roles: ["ADMIN", "ASSISTANTMANAGER"],
-		},
-		{
-			urlRegex: /\/dashboard\/education-term$/,
-			roles: ["ADMIN", "ASSISTANTMANAGER"],
-		},
-		{
-			urlRegex: /\/dashboard\/education-term\/new$/,
-			roles: ["ADMIN", "ASSISTANTMANAGER"],
-		},
-		{
-			urlRegex: /\/dashboard\/program$/,
-			roles: ["ADMIN", "ASSISTANTMANAGER"],
-		},
-		{
-			urlRegex: /\/dashboard\/program\/new$/,
-			roles: ["ADMIN", "ASSISTANTMANAGER"],
-		},
-		{
-			urlRegex: /\/dashboard\/student$/,
-			roles: ["ADMIN", "ASSISTANTMANAGER"],
-		},
-		{
-			urlRegex: /\/dashboard\/student\/new$/,
-			roles: ["ADMIN", "ASSISTANTMANAGER"],
-		},
-		{
-			urlRegex: /\/dashboard\/student\/\d+$/,
-			roles: ["ADMIN", "ASSISTANTMANAGER"],
-		},
-		{ urlRegex: /\/dashboard\/student-info$/, roles: ["TEACHER"] },
-		{ urlRegex: /\/dashboard\/student-info\/new$/, roles: ["TEACHER"] },
-		{ urlRegex: /\/dashboard\/student-info\/\d+$/, roles: ["TEACHER"] },
-		{ urlRegex: /\/dashboard\/meet$/, roles: ["TEACHER"] },
-		{ urlRegex: /\/dashboard\/meet\/new$/, roles: ["TEACHER"] },
-		{ urlRegex: /\/dashboard\/meet\/\d+$/, roles: ["TEACHER"] },
-		{
-			urlRegex: /\/dashboard\/contact-message$/,
-			roles: ["ADMIN", "MANAGER", "ASSISTANTMANAGER"],
-		},
-		{ urlRegex: /\/dashboard\/choose-lesson$/, roles: ["STUDENT"] },
-		{ urlRegex: /\/dashboard\/grades-meets$/, roles: ["STUDENT"] },
 	],
 };

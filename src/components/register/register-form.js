@@ -43,6 +43,13 @@ const RegisterForm = () => {
 								    name="lastname"
 									controlId="formBasicLastName"
 									error={state?.errors?.lastname}
+							  />
+							  <TextInput
+									className="mb-3 txt-inp"
+									label="User Name"
+								    name="userName"
+									controlId="formBasicLastName"
+									error={state?.errors?.userName}
                               />
                               <TextInput
 									className="mb-3 txt-inp"
