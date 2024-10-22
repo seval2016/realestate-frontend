@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { AuthContext } from '../context/AuthContext';  // Assuming handlePasswordUpdate is set up
+import { AuthContext } from '../context/AuthContext';  //  handlePasswordUpdate 'i gozden gecirelim
 
 const PasswordUpdateForm = () => {
     const { handlePasswordUpdate } = useContext(AuthContext);  
