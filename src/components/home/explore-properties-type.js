@@ -1,24 +1,17 @@
-import React from 'react'
+import React from "react";
 
-import SectionTitle from '../common/section-title'
-import Properties from '../explore-properties/properties'
-import { Container } from 'react-bootstrap'
-
-
+import SectionTitle from "../common/section-title";
+import Properties from "../explore-properties/properties";
+import { Container } from "react-bootstrap";
 
 const ExplorePropertiesType = () => {
   return (
-    
-    <Container className=''>
-        <SectionTitle title="Explore Properties" type="By Types"/>
-      
-        <Properties/>
-     </Container>
-          
-          
-        
-    
-  )
-}
+    <Container className="">
+      <SectionTitle title="Explore Properties" type="By Types" />
 
-export default ExplorePropertiesType
+      <Properties />
+    </Container>
+  );
+};
+
+export default ExplorePropertiesType;

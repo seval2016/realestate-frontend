@@ -54,7 +54,7 @@ export const config = {
 			},
 		},
 	},
-	apiURL: "https://mycampusmates.com/app",
+	apiURL: "https://mycampusmates.com/app",  // Buradaki URL'i ve genel olarak tum sayfayi gozden gecirip yenilemek gerekiyor, diger projeden ornek alinmis
 	
 	genders: [
 		{ label: "Female", value: "FEMALE" },
